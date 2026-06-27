@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Outer circle -->
+  <circle cx="100" cy="85" r="55" />
+  <!-- Central vertical line from top through sun to bottom -->
+  <line x1="100" y1="8" x2="100" y2="192" />
+  <!-- Rising sun upper half -->
+  <path d="M65 85 A 35 35 0 0 1 135 85" />
+  <!-- Sun rays -->
+  <line x1="100" y1="23" x2="100" y2="29" />
+  <line x1="65" y1="50" x2="69" y2="54" />
+  <line x1="135" y1="50" x2="131" y2="54" />
+  <line x1="48" y1="85" x2="54" y2="85" />
+  <line x1="146" y1="85" x2="152" y2="85" />
+  <line x1="65" y1="120" x2="69" y2="116" />
+  <line x1="135" y1="120" x2="131" y2="116" />
+  <!-- Coffee bean at center -->
+  <path d="M100 72
+           C 108 72, 112 78, 112 85
+           C 112 92, 108 98, 100 98
+           C 92 98, 88 92, 88 85
+           C 88 78, 92 72, 100 72 Z" />
+  <path d="M100 74 C 96 80, 96 90, 100 96" />
+  <!-- Dove below sun, centered on vertical line -->
+  <!-- Dove body -->
+  <ellipse cx="100" cy="142" rx="10" ry="6" />
+  <!-- Dove head -->
+  <circle cx="100" cy="134" r="3.5" />
+  <!-- Wings spread -->
+  <path d="M90 140 C 78 132, 72 138, 68 144" />
+  <path d="M110 140 C 122 132, 128 138, 132 144" />
+  <!-- Tail -->
+  <path d="M96 148 L 92 156 L 100 154 L 108 156 L 104 148" />
+  <!-- Branch with coffee bean in beak, horizontal -->
+  <line x1="100" y1="130" x2="115" y2="130" />
+  <line x1="108" y1="128" x2="108" y2="132" />
+  <line x1="112" y1="128" x2="112" y2="132" />
+  <!-- Small coffee bean on branch -->
+  <path d="M114 128 C 116 128, 117 129, 116 130 C 115 131, 114 130, 114 128 Z" />
+</svg>
