@@ -1,6 +1,6 @@
-import logoBean from "@/assets/logo-bean.png";
-import logoCup from "@/assets/logo-cup.png";
-import logoSun from "@/assets/logo-sun.png";
+import logoBean from "@/assets/logo-bean.svg";
+import logoCup from "@/assets/logo-cup.svg";
+import logoSun from "@/assets/logo-sun.svg";
 
 export const logoConcepts = [
   {

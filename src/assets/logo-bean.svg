@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Coffee bean outer shape -->
+  <path d="M100 30
+           C 140 30, 170 60, 170 100
+           C 170 140, 140 170, 100 170
+           C 60 170, 30 140, 30 100
+           C 30 60, 60 30, 100 30 Z" />
+  <!-- Central vein -->
+  <path d="M100 42 C 88 70, 88 130, 100 158" />
+  <!-- Ethiopian-inspired geometry — concentric arcs -->
+  <path d="M100 52 C 72 65, 58 100, 72 135" />
+  <path d="M100 65 C 80 75, 72 100, 80 125" />
+  <path d="M100 78 C 86 85, 82 100, 88 115" />
+  <!-- Cross-hatch diamond motif near top -->
+  <path d="M100 52 L 108 60 L 100 68 L 92 60 Z" />
+  <!-- Small accent marks along the vein -->
+  <line x1="95" y1="85" x2="105" y2="85" />
+  <line x1="93" y1="100" x2="107" y2="100" />
+  <line x1="95" y1="115" x2="105" y2="115" />
+</svg>
