@@ -1,15 +1,19 @@
-import { MarkLogo } from "@/components/brand/Logo";
+import { MarkLogo, PatternDivider } from "@/components/brand/Logo";
 
 export function Footer() {
   return (
-    <footer className="bg-espresso-deep text-cream/80 pt-24 pb-10">
+    <footer className="bg-espresso-deep text-cream/80 pt-20 pb-10">
+      <div className="container-prose">
+        <PatternDivider className="mb-16 opacity-70" />
+      </div>
       <div className="container-prose grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <div className="flex items-center gap-3">
-            <MarkLogo className="h-12 w-12" />
+          <div className="flex items-center gap-4">
+            <MarkLogo className="h-14 w-auto" />
             <div>
-              <div className="font-serif text-2xl text-cream">A Delight Cafe</div>
-              <div className="text-[0.62rem] tracking-[0.3em] uppercase text-gold/80">Pleasanton · California</div>
+              <div className="font-serif tracking-[0.18em] text-xl text-cream">A&nbsp;DELIGHT</div>
+              <div className="mt-1 h-px w-10 bg-gold/70" />
+              <div className="mt-1 text-[0.6rem] tracking-[0.3em] uppercase text-gold/80">Pleasanton · California</div>
             </div>
           </div>
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-cream/65">

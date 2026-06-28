@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { MarkLogo } from "@/components/brand/Logo";
+import { HorizontalLogo } from "@/components/brand/Logo";
 
 const links = [
   { href: "#story", label: "Story" },
@@ -28,12 +28,8 @@ export function Nav() {
       }`}
     >
       <div className="container-prose grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4">
-        <a href="#top" className="flex min-w-0 items-center gap-3 group">
-          <MarkLogo className="h-10 w-10 shrink-0 transition-transform duration-500 group-hover:rotate-12" />
-          <div className="min-w-0 leading-tight">
-            <div className="font-serif text-xl text-cream truncate">A Delight Cafe</div>
-            <div className="text-[0.62rem] tracking-[0.3em] uppercase text-gold/80">Ethiopian Coffee</div>
-          </div>
+        <a href="#top" className="flex min-w-0 items-center group">
+          <HorizontalLogo tone="cream" className="transition-opacity duration-500 group-hover:opacity-80" />
         </a>
 
         <nav className="hidden md:flex items-center gap-9">
