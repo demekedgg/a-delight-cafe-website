@@ -5,7 +5,7 @@ import storyImg from "@/assets/story.jpg";
 import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import { Newsletter } from "@/components/site/Newsletter";
-import { logoConcepts } from "@/components/brand/Logo";
+import { logoConcepts, MarkLogo, HorizontalLogo, PatternDivider } from "@/components/brand/Logo";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -256,49 +256,62 @@ function Home() {
         </div>
       </section>
 
-      {/* LOGO CONCEPTS */}
+      {/* IDENTITY / BRAND LOCKUPS */}
       <section className="py-24 sm:py-32 bg-cream-soft border-y border-espresso/10">
         <div className="container-prose">
           <div className="max-w-2xl mb-16">
             <div className="flex items-center gap-4 mb-6">
               <span className="gold-rule" />
-              <span className="eyebrow">Identity Concepts</span>
+              <span className="eyebrow">The Mark</span>
             </div>
             <h2 className="text-4xl sm:text-5xl text-espresso-deep leading-[1.1]">
-              Three marks. <span className="italic text-gold">One soul.</span>
+              One bean. <span className="italic text-gold">Three moods.</span>
             </h2>
             <p className="mt-5 text-espresso/70 leading-relaxed">
-              Minimal, modern, single-line iconography — each concept reads in
-              gold on deep espresso, or espresso on cream.
+              The A Delight mark carries an heirloom Ethiopian motif at its center
+              — diamonds and dots drawn from traditional <em>tibeb</em> weaving,
+              wrapped around the coffee bean that began it all.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-3">
             {logoConcepts.map((c, i) => (
               <div key={c.id} className="group">
-                <div className="grid grid-cols-2 border border-espresso/15 overflow-hidden">
-                  <div className="aspect-square bg-espresso-deep grid place-items-center p-8 transition-transform duration-700 group-hover:scale-[1.02]">
-                    <img src={c.src} alt={`${c.name} on dark`} className="max-h-full" />
+                <div className={`${c.bg} aspect-[3/4] grid place-items-center p-10 border border-espresso/10 overflow-hidden relative`}>
+                  <div className={`absolute top-5 left-6 text-[0.55rem] tracking-[0.3em] uppercase ${c.accent} opacity-80`}>
+                    0{i + 1} — {c.name}
                   </div>
-                  <div className="aspect-square bg-cream grid place-items-center p-8">
-                    <img
-                      src={c.src}
-                      alt={`${c.name} on cream`}
-                      className="max-h-full"
-                      style={{ filter: "brightness(0) saturate(100%) invert(13%) sepia(20%) saturate(900%) hue-rotate(2deg)" }}
-                    />
-                  </div>
+                  {c.layout === "stacked" ? (
+                    <div className="flex flex-col items-center text-center">
+                      <div className={`font-serif tracking-[0.18em] text-2xl sm:text-3xl ${c.text}`}>
+                        A&nbsp;DELIGHT
+                      </div>
+                      <MarkLogo className="mt-6 h-36 w-auto" />
+                      <div className="mt-6 flex items-center gap-3">
+                        <span className={`h-px w-6 ${c.accent === "text-gold" ? "bg-gold" : "bg-gold"}`} />
+                        <span className={`text-[0.6rem] tracking-[0.3em] uppercase ${c.accent}`}>
+                          Specialty Coffee · Pleasanton
+                        </span>
+                        <span className="h-px w-6 bg-gold" />
+                      </div>
+                    </div>
+                  ) : (
+                    <HorizontalLogo tone="espresso" className="scale-110" />
+                  )}
                 </div>
                 <div className="mt-5">
-                  <div className="text-[0.62rem] tracking-[0.3em] text-gold uppercase mb-2">Concept 0{i + 1}</div>
+                  <div className="text-[0.62rem] tracking-[0.3em] text-gold uppercase mb-2">Treatment 0{i + 1}</div>
                   <h3 className="font-serif text-2xl text-espresso-deep">{c.name}</h3>
                   <p className="mt-2 text-sm text-espresso/70 leading-relaxed">{c.description}</p>
                 </div>
               </div>
             ))}
           </div>
+
+          <PatternDivider className="mt-20" />
         </div>
       </section>
+
 
       {/* VISIT */}
       <section id="visit" className="py-24 sm:py-36 bg-espresso text-cream">
