@@ -218,7 +218,9 @@ function Home() {
 
       {/* EXPERIENCE — coming soon */}
       <section id="experience" className="py-24 sm:py-36 bg-cream relative overflow-hidden">
-        <div className="container-prose">
+        <MarkLogo className="pointer-events-none select-none absolute -right-16 top-10 h-[360px] w-auto opacity-[0.05]" />
+        <div className="container-prose relative">
+          <PatternDivider className="mb-14" />
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center gap-4 mb-6">
               <span className="gold-rule" />
