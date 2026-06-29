@@ -218,7 +218,7 @@ function Home() {
 
       {/* EXPERIENCE — coming soon */}
       <section id="experience" className="py-24 sm:py-36 bg-cream relative overflow-hidden">
-        <MarkLogo className="pointer-events-none select-none absolute -right-16 top-10 h-[360px] w-auto opacity-[0.05]" />
+        <MarkLogo className="pointer-events-none select-none absolute -right-24 top-10 w-[560px] h-auto opacity-[0.05]" />
         <div className="container-prose relative">
           <PatternDivider className="mb-14" />
           <div className="max-w-4xl mx-auto text-center">
@@ -288,7 +288,7 @@ function Home() {
                       <div className={`font-serif tracking-[0.18em] text-2xl sm:text-3xl ${c.text}`}>
                         A&nbsp;DELIGHT
                       </div>
-                      <MarkLogo className="mt-6 h-36 w-auto" />
+                      <MarkLogo className="mt-8 w-full max-w-[260px] h-auto" />
                       <div className="mt-6 flex items-center gap-3">
                         <span className={`h-px w-6 ${c.accent === "text-gold" ? "bg-gold" : "bg-gold"}`} />
                         <span className={`text-[0.6rem] tracking-[0.3em] uppercase ${c.accent}`}>
