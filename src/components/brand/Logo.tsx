@@ -1,46 +1,33 @@
-import logoMark from "@/assets/logo-mark.svg";
+import logoAsset from "@/assets/a-delight-logo.png.asset.json";
 import patternDivider from "@/assets/pattern-divider.svg";
 
-export { logoMark, patternDivider };
+export const logoMark = logoAsset.url;
+export { patternDivider };
 
-/** The official A Delight bean mark (gold + espresso) */
+/** The official A Delight logo (full lockup, used as-is from upload) */
 export function MarkLogo({ className = "" }: { className?: string }) {
   return (
     <img
-      src={logoMark}
-      alt="A Delight Cafe"
-      width={280}
-      height={400}
+      src={logoAsset.url}
+      alt="A Delight Specialty Coffee · Pleasanton"
       className={className}
     />
   );
 }
 
-/** Horizontal lockup — "Golden Hour" treatment (mark + stacked wordmark) */
+/** Horizontal lockup — uses the full uploaded logo as-is */
 export function HorizontalLogo({
   className = "",
-  tone = "cream",
 }: {
   className?: string;
   tone?: "cream" | "espresso";
 }) {
-  const text = tone === "cream" ? "text-cream" : "text-espresso-deep";
-  const sub = tone === "cream" ? "text-gold/85" : "text-gold";
-  const rule = tone === "cream" ? "bg-gold/70" : "bg-gold";
-
   return (
-    <div className={`flex items-center gap-4 ${className}`}>
-      <img src={logoMark} alt="" width={96} height={67} className="h-14 w-auto shrink-0" />
-      <div className="leading-none">
-        <div className={`font-serif tracking-[0.18em] text-xl sm:text-2xl ${text}`}>
-          A&nbsp;DELIGHT
-        </div>
-        <div className={`mt-1.5 h-px w-12 ${rule}`} />
-        <div className={`mt-1.5 text-[0.55rem] sm:text-[0.6rem] tracking-[0.3em] uppercase ${sub}`}>
-          Specialty Coffee · Pleasanton
-        </div>
-      </div>
-    </div>
+    <img
+      src={logoAsset.url}
+      alt="A Delight Specialty Coffee · Pleasanton"
+      className={`h-14 w-auto ${className}`}
+    />
   );
 }
 
