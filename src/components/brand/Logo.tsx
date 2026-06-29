@@ -9,8 +9,8 @@ export function MarkLogo({ className = "" }: { className?: string }) {
     <img
       src={logoMark}
       alt="A Delight Cafe"
-      width={400}
-      height={280}
+      width={280}
+      height={400}
       className={className}
     />
   );
