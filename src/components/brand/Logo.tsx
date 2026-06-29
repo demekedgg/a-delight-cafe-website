@@ -1,42 +1,42 @@
-import logoAsset from "@/assets/a-delight-logo.png.asset.json";
+import logoMark from "@/assets/logo-mark.svg";
 import patternDivider from "@/assets/pattern-divider.svg";
 
-export const logoMark = logoAsset.url;
-export { patternDivider };
+export { logoMark, patternDivider };
 
-/** The official A Delight bean mark — uploaded image, used as-is */
+/** The official A Delight bean mark (gold + espresso) */
 export function MarkLogo({ className = "" }: { className?: string }) {
   return (
     <img
-      src={logoAsset.url}
-      alt="A Delight Specialty Coffee"
+      src={logoMark}
+      alt="A Delight Cafe"
+      width={120}
+      height={156}
       className={className}
     />
   );
 }
 
-/** Horizontal lockup — real mark + stacked wordmark */
+/** Horizontal lockup — "Golden Hour" treatment (mark + stacked wordmark) */
 export function HorizontalLogo({
-  tone = "cream",
   className = "",
+  tone = "cream",
 }: {
-  tone?: "cream" | "espresso";
   className?: string;
+  tone?: "cream" | "espresso";
 }) {
   const text = tone === "cream" ? "text-cream" : "text-espresso-deep";
-  const sub = tone === "cream" ? "text-gold/80" : "text-gold";
+  const sub = tone === "cream" ? "text-gold/85" : "text-gold";
   const rule = tone === "cream" ? "bg-gold/70" : "bg-gold";
+
   return (
-    <div className={`flex items-center gap-3 ${className}`}>
-      <img
-        src={logoAsset.url}
-        alt="A Delight Specialty Coffee"
-        className="h-12 w-auto shrink-0"
-      />
+    <div className={`flex items-center gap-4 ${className}`}>
+      <img src={logoMark} alt="" width={56} height={72} className="h-12 w-auto shrink-0" />
       <div className="leading-none">
-        <div className={`font-serif tracking-[0.22em] text-lg ${text}`}>A&nbsp;DELIGHT</div>
-        <div className={`mt-1.5 h-px w-8 ${rule}`} />
-        <div className={`mt-1.5 text-[0.58rem] tracking-[0.3em] uppercase ${sub}`}>
+        <div className={`font-serif tracking-[0.18em] text-xl sm:text-2xl ${text}`}>
+          A&nbsp;DELIGHT
+        </div>
+        <div className={`mt-1.5 h-px w-12 ${rule}`} />
+        <div className={`mt-1.5 text-[0.55rem] sm:text-[0.6rem] tracking-[0.3em] uppercase ${sub}`}>
           Specialty Coffee · Pleasanton
         </div>
       </div>
