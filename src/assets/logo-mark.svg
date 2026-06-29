@@ -1,40 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
-  <!-- Horizontal coffee bean -->
-  <ellipse cx="200" cy="140" rx="190" ry="130" fill="#2a1a10"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 400" fill="none">
+  <!-- Vertical coffee bean -->
+  <ellipse cx="140" cy="200" rx="130" ry="190" fill="#2a1a10"/>
   <!-- Outer gold frame -->
-  <ellipse cx="200" cy="140" rx="190" ry="130" fill="none" stroke="#c9962a" stroke-width="14"/>
+  <ellipse cx="140" cy="200" rx="130" ry="190" fill="none" stroke="#c9962a" stroke-width="14"/>
   <!-- Subtle inner highlight ring -->
-  <ellipse cx="200" cy="140" rx="178" ry="118" fill="none" stroke="#d9b25a" stroke-width="0.8" opacity="0.35"/>
+  <ellipse cx="140" cy="200" rx="118" ry="178" fill="none" stroke="#d9b25a" stroke-width="0.8" opacity="0.35"/>
 
-  <!-- Gold wave (bean crease) running across -->
-  <path d="M22 142
-           C 90 92, 150 92, 200 140
-           C 250 188, 310 188, 378 138"
+  <!-- Gold wave (bean crease) running vertically -->
+  <path d="M138 22
+           C 88 90, 88 150, 140 200
+           C 192 250, 192 310, 138 378"
         stroke="#c9962a" stroke-width="14" stroke-linecap="round" fill="none"/>
 
-  <!-- Upper Ethiopian diamond motif -->
+  <!-- Left Ethiopian diamond motif -->
   <g stroke="#d9b25a" stroke-width="2.4" fill="none" stroke-linejoin="miter">
-    <!-- nested diamonds -->
-    <path d="M200 50 L222 72 L200 94 L178 72 Z"/>
-    <path d="M200 60 L212 72 L200 84 L188 72 Z"/>
-    <rect x="196" y="68" width="8" height="8" transform="rotate(45 200 72)" fill="#d9b25a"/>
-    <!-- side dots -->
-    <circle cx="168" cy="72" r="2.2" fill="#d9b25a"/>
-    <circle cx="160" cy="72" r="1.6" fill="#d9b25a"/>
-    <circle cx="232" cy="72" r="2.2" fill="#d9b25a"/>
-    <circle cx="240" cy="72" r="1.6" fill="#d9b25a"/>
+    <path d="M50 200 L72 178 L94 200 L72 222 Z"/>
+    <path d="M60 200 L72 188 L84 200 L72 212 Z"/>
+    <rect x="68" y="196" width="8" height="8" transform="rotate(45 72 200)" fill="#d9b25a"/>
+    <circle cx="72" cy="168" r="2.2" fill="#d9b25a"/>
+    <circle cx="72" cy="160" r="1.6" fill="#d9b25a"/>
+    <circle cx="72" cy="232" r="2.2" fill="#d9b25a"/>
+    <circle cx="72" cy="240" r="1.6" fill="#d9b25a"/>
   </g>
 
-  <!-- Lower Ethiopian diamond motif (larger, nested) -->
+  <!-- Right Ethiopian diamond motif (larger, nested) -->
   <g stroke="#d9b25a" stroke-width="2.6" fill="none" stroke-linejoin="miter">
-    <path d="M200 178 L238 216 L200 254 L162 216 Z"/>
-    <path d="M200 190 L226 216 L200 242 L174 216 Z"/>
-    <path d="M200 202 L214 216 L200 230 L186 216 Z"/>
-    <rect x="195" y="211" width="10" height="10" transform="rotate(45 200 216)" fill="#d9b25a"/>
-    <!-- side dots -->
-    <circle cx="150" cy="216" r="2.4" fill="#d9b25a"/>
-    <circle cx="140" cy="216" r="1.8" fill="#d9b25a"/>
-    <circle cx="250" cy="216" r="2.4" fill="#d9b25a"/>
-    <circle cx="260" cy="216" r="1.8" fill="#d9b25a"/>
+    <path d="M178 200 L216 162 L254 200 L216 238 Z"/>
+    <path d="M190 200 L216 174 L242 200 L216 226 Z"/>
+    <path d="M202 200 L216 186 L230 200 L216 214 Z"/>
+    <rect x="211" y="195" width="10" height="10" transform="rotate(45 216 200)" fill="#d9b25a"/>
+    <circle cx="216" cy="150" r="2.4" fill="#d9b25a"/>
+    <circle cx="216" cy="140" r="1.8" fill="#d9b25a"/>
+    <circle cx="216" cy="250" r="2.4" fill="#d9b25a"/>
+    <circle cx="216" cy="260" r="1.8" fill="#d9b25a"/>
   </g>
 </svg>
