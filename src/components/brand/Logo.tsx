@@ -30,7 +30,7 @@ export function HorizontalLogo({
 
   return (
     <div className={`flex items-center gap-4 ${className}`}>
-      <img src={logoMark} alt="" width={56} height={72} className="h-12 w-auto shrink-0" />
+      <img src={logoMark} alt="" width={96} height={67} className="h-14 w-auto shrink-0" />
       <div className="leading-none">
         <div className={`font-serif tracking-[0.18em] text-xl sm:text-2xl ${text}`}>
           A&nbsp;DELIGHT
