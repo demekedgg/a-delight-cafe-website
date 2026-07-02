@@ -5,7 +5,7 @@ const links = [
   { href: "#story", label: "Story" },
   { href: "#coffee", label: "Coffee" },
   { href: "#experience", label: "Experience" },
-  { href: "#visit", label: "Visit" },
+  { href: "#coming-soon", label: "Coming Soon" },
 ];
 
 export function Nav() {
