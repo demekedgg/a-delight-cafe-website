@@ -38,13 +38,13 @@ export function Footer() {
             <li><a href="#" className="hover:text-gold">Instagram</a></li>
             <li><a href="#" className="hover:text-gold">Facebook</a></li>
             <li><a href="#" className="hover:text-gold">TikTok</a></li>
-            <li><a href="mailto:hello@adelightcafe.com" className="hover:text-gold">hello@adelightcafe.com</a></li>
+            <li><a href="mailto:hello@adelightcoffee.com" className="hover:text-gold">hello@adelightcoffee.com</a></li>
           </ul>
         </div>
       </div>
 
       <div className="container-prose mt-16 pt-8 border-t border-cream/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-[0.7rem] tracking-[0.2em] uppercase text-cream/50">
-        <div>© {new Date().getFullYear()} A Delight Cafe · All rights reserved</div>
+        <div>© {new Date().getFullYear()} A Delight Coffee · All rights reserved</div>
         <div>Crafted in Pleasanton, CA</div>
       </div>
     </footer>

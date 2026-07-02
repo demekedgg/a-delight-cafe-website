@@ -8,7 +8,7 @@ export function MarkLogo({ className = "" }: { className?: string }) {
   return (
     <img
       src={logoMark}
-      alt="A Delight Cafe"
+      alt="A Delight Coffee"
       width={120}
       height={156}
       className={className}
@@ -37,7 +37,7 @@ export function HorizontalLogo({
         </div>
         <div className={`mt-1.5 h-px w-12 ${rule}`} />
         <div className={`mt-1.5 text-[0.55rem] sm:text-[0.6rem] tracking-[0.3em] uppercase ${sub}`}>
-          Specialty Coffee · Pleasanton
+          Ethiopian Specialty Coffee
         </div>
       </div>
     </div>
