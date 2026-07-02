@@ -315,58 +315,23 @@ function Home() {
       </section>
 
 
-      {/* VISIT */}
-      <section id="visit" className="py-24 sm:py-36 bg-espresso text-cream">
-        <div className="container-prose grid gap-16 lg:grid-cols-2 items-start">
-          <div>
-            <div className="flex items-center gap-4 mb-6">
-              <span className="gold-rule" />
-              <span className="eyebrow">Visit Us</span>
-            </div>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl leading-[1.05]">
-              Opening soon in
-              <span className="block italic text-gold">Pleasanton, California.</span>
-            </h2>
-            <p className="mt-6 text-cream/70 text-lg leading-relaxed max-w-md">
-              A quiet corner of the Tri-Valley, reimagined as a home for
-              Ethiopian coffee culture.
-            </p>
-
-            <div className="mt-12 space-y-8">
-              <div>
-                <div className="eyebrow !text-gold-soft mb-2">Location</div>
-                <div className="font-serif text-2xl">Downtown Pleasanton</div>
-                <div className="text-cream/65 text-sm mt-1">Address revealed at launch · Pleasanton, CA</div>
-              </div>
-              <div>
-                <div className="eyebrow !text-gold-soft mb-2">Hours</div>
-                <div className="grid grid-cols-2 max-w-sm gap-y-1 text-sm">
-                  <div className="text-cream/65">Mon — Fri</div><div>6:30a — 6:00p</div>
-                  <div className="text-cream/65">Saturday</div><div>7:00a — 7:00p</div>
-                  <div className="text-cream/65">Sunday</div><div>7:00a — 4:00p</div>
-                </div>
-                <div className="text-xs text-cream/45 mt-2">Hours subject to change at opening.</div>
-              </div>
-              <div>
-                <div className="eyebrow !text-gold-soft mb-2">Contact</div>
-                <a href="mailto:hello@adelightcoffee.com" className="block hover:text-gold transition-colors">hello@adelightcoffee.com</a>
-                <a href="tel:+15555555555" className="block text-cream/70 hover:text-gold transition-colors mt-1">(555) 555-5555</a>
-              </div>
-            </div>
+      {/* COFFEE IS COMING */}
+      <section id="coming-soon" className="py-24 sm:py-36 bg-espresso text-cream">
+        <div className="container-prose max-w-3xl mx-auto text-center">
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <span className="gold-rule" />
+            <span className="eyebrow">Coming Soon</span>
+            <span className="gold-rule" />
           </div>
-
-          <div className="aspect-[4/5] sm:aspect-[5/6] relative border border-cream/15 overflow-hidden">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_oklch(0.74_0.13_75_/_0.18),_transparent_60%)]" />
-            <div className="absolute inset-0 grid place-items-center text-center p-10">
-              <div>
-                <svg className="mx-auto mb-6 text-gold" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                  <path d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z" />
-                  <circle cx="12" cy="9" r="2.5" />
-                </svg>
-                <div className="font-serif text-3xl text-cream mb-2">Pleasanton, CA</div>
-                <div className="text-xs tracking-[0.3em] uppercase text-cream/55">Map coming at launch</div>
-              </div>
-            </div>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl leading-[1.05]">
+            Coffee is
+            <span className="block italic text-gold">coming.</span>
+          </h2>
+          <p className="mt-8 text-lg text-cream/70 leading-relaxed max-w-2xl mx-auto">
+            A Delight Coffee is launching soon — starting with directly sourced Ethiopian beans, and growing from there. Join the list to be first.
+          </p>
+          <div className="mt-14 max-w-md mx-auto">
+            <Newsletter />
           </div>
         </div>
       </section>
