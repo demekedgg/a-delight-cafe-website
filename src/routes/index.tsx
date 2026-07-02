@@ -10,9 +10,9 @@ import { logoConcepts, MarkLogo, HorizontalLogo, PatternDivider } from "@/compon
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "A Delight Cafe — Ethiopian Specialty Coffee, Pleasanton" },
+      { title: "A Delight Coffee — Ethiopian Specialty Coffee, Pleasanton" },
       { name: "description", content: "Heritage Ethiopian coffee — Yirgacheffe, Sidama, Guji. Opening soon in Pleasanton, California." },
-      { property: "og:title", content: "A Delight Cafe — Ethiopian Specialty Coffee" },
+      { property: "og:title", content: "A Delight Coffee — Ethiopian Specialty Coffee" },
       { property: "og:description", content: "Heritage Ethiopian coffee, opening soon in Pleasanton, California." },
       { property: "og:image", content: heroImg },
       { name: "twitter:image", content: heroImg },
@@ -76,7 +76,7 @@ function Home() {
               <span className="block italic text-gold mt-2">was born.</span>
             </h1>
             <p className="mt-8 max-w-xl text-base sm:text-lg text-cream/75 leading-relaxed">
-              A Delight Cafe is a love letter to Ethiopia — the birthplace of coffee.
+              A Delight Coffee is a love letter to Ethiopia — the birthplace of coffee.
               Single-origin beans, ceremony-grade craft, brought home to Pleasanton.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
@@ -130,7 +130,7 @@ function Home() {
                 clay <em>jebena</em>, and poured three times for guests.
               </p>
               <p>
-                A Delight Cafe was born from that ceremony. We bring the
+                A Delight Coffee was born from that ceremony. We bring the
                 farmers, the heirloom varietals, and the patience of the
                 ritual to Pleasanton — without losing a single note along the way.
               </p>
@@ -349,7 +349,7 @@ function Home() {
               </div>
               <div>
                 <div className="eyebrow !text-gold-soft mb-2">Contact</div>
-                <a href="mailto:hello@adelightcafe.com" className="block hover:text-gold transition-colors">hello@adelightcafe.com</a>
+                <a href="mailto:hello@adelightcoffee.com" className="block hover:text-gold transition-colors">hello@adelightcoffee.com</a>
                 <a href="tel:+15555555555" className="block text-cream/70 hover:text-gold transition-colors mt-1">(555) 555-5555</a>
               </div>
             </div>
