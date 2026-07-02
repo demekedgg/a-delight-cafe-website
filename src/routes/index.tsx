@@ -130,6 +130,15 @@ function Home() {
                 clay <em>jebena</em>, and poured three times for guests.
               </p>
               <p>
+                For our founder, this is not history — it is memory. He grew up
+                watching his grandmother and mother harvest the ripe red cherries
+                by hand, open each one to free the beans, wash them, and spread
+                them to dry in the sun. When the beans were ready, they roasted
+                them over open flame, and the aroma drew neighbors and family
+                together. He was watching the entire craft of specialty coffee —
+                done by hand, with love, at home.
+              </p>
+              <p>
                 A Delight Coffee was born from that ceremony. We bring the
                 farmers, the heirloom varietals, and the patience of the
                 ritual to Pleasanton — without losing a single note along the way.
