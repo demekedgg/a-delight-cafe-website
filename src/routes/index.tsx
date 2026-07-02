@@ -292,7 +292,7 @@ function Home() {
                       <div className="mt-6 flex items-center gap-3">
                         <span className={`h-px w-6 ${c.accent === "text-gold" ? "bg-gold" : "bg-gold"}`} />
                         <span className={`text-[0.6rem] tracking-[0.3em] uppercase ${c.accent}`}>
-                          Specialty Coffee · Pleasanton
+                          Ethiopian Specialty Coffee
                         </span>
                         <span className="h-px w-6 bg-gold" />
                       </div>
