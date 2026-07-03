@@ -10,10 +10,10 @@ import { logoConcepts, MarkLogo, HorizontalLogo, PatternDivider } from "@/compon
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "A Delight Coffee — Ethiopian Specialty Coffee, Pleasanton" },
-      { name: "description", content: "Heritage Ethiopian coffee — Yirgacheffe, Sidama, Guji. Opening soon in Pleasanton, California." },
+      { title: "A Delight Coffee — Ethiopian Specialty Coffee" },
+      { name: "description", content: "Heritage Ethiopian coffee — Yirgacheffe, Sidama, Guji. Launching soon in California." },
       { property: "og:title", content: "A Delight Coffee — Ethiopian Specialty Coffee" },
-      { property: "og:description", content: "Heritage Ethiopian coffee, opening soon in Pleasanton, California." },
+      { property: "og:description", content: "Heritage Ethiopian coffee, launching soon in California." },
       { property: "og:image", content: heroImg },
       { name: "twitter:image", content: heroImg },
     ],
@@ -69,7 +69,7 @@ function Home() {
           <div className="max-w-3xl fade-up">
             <div className="flex items-center gap-4 mb-8">
               <span className="gold-rule" />
-              <span className="eyebrow !text-gold-soft">Est. in Pleasanton · California</span>
+              <span className="eyebrow !text-gold-soft">Heritage · Craft · California</span>
             </div>
             <h1 className="font-serif text-cream text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight">
               The cup where coffee
@@ -77,7 +77,7 @@ function Home() {
             </h1>
             <p className="mt-8 max-w-xl text-base sm:text-lg text-cream/75 leading-relaxed">
               A Delight Coffee is a love letter to Ethiopia — the birthplace of coffee.
-              Single-origin beans, ceremony-grade craft, brought home to Pleasanton.
+              Single-origin beans, ceremony-grade craft, brought home to California.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a href="#story" className="btn-gold">Discover the Story</a>
@@ -141,7 +141,7 @@ function Home() {
               <p>
                 A Delight Coffee was born from that ceremony. We bring the
                 farmers, the heirloom varietals, and the patience of the
-                ritual to Pleasanton — without losing a single note along the way.
+                ritual to California — without losing a single note along the way.
               </p>
             </div>
             <div className="mt-10 pt-8 border-t border-espresso/15 flex items-center gap-5">

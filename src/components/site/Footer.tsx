@@ -13,12 +13,12 @@ export function Footer() {
             <div>
               <div className="font-serif tracking-[0.18em] text-xl text-cream">A&nbsp;DELIGHT</div>
               <div className="mt-1 h-px w-10 bg-gold/70" />
-              <div className="mt-1 text-[0.6rem] tracking-[0.3em] uppercase text-gold/80">Pleasanton · California</div>
+              <div className="mt-1 text-[0.6rem] tracking-[0.3em] uppercase text-gold/80">Ethiopian Specialty Coffee</div>
             </div>
           </div>
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-cream/65">
             Heritage Ethiopian coffee, brewed with intention. A new home for the
-            ceremony of the cup, opening soon in Pleasanton.
+            ceremony of the cup, launching soon.
           </p>
         </div>
 
@@ -45,7 +45,7 @@ export function Footer() {
 
       <div className="container-prose mt-16 pt-8 border-t border-cream/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-[0.7rem] tracking-[0.2em] uppercase text-cream/50">
         <div>© {new Date().getFullYear()} A Delight Coffee · All rights reserved</div>
-        <div>Crafted in Pleasanton, CA</div>
+        <div>A Delight Coffee · Bay Area, California</div>
       </div>
     </footer>
   );
