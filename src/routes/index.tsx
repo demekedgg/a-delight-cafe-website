@@ -292,23 +292,8 @@ function Home() {
                   <div className={`absolute top-5 left-6 text-[0.55rem] tracking-[0.3em] uppercase ${c.accent} opacity-80`}>
                     0{i + 1} — {c.name}
                   </div>
-                  {c.layout === "stacked" ? (
-                    <div className="flex flex-col items-center text-center">
-                      <div className={`font-serif tracking-[0.18em] text-2xl sm:text-3xl ${c.text}`}>
-                        A&nbsp;DELIGHT
-                      </div>
-                      <MarkLogo className="mt-6 h-36 w-auto" />
-                      <div className="mt-6 flex items-center gap-3">
-                        <span className={`h-px w-6 ${c.accent === "text-gold" ? "bg-gold" : "bg-gold"}`} />
-                        <span className={`text-[0.6rem] tracking-[0.3em] uppercase ${c.accent}`}>
-                          Ethiopian Specialty Coffee
-                        </span>
-                        <span className="h-px w-6 bg-gold" />
-                      </div>
-                    </div>
-                  ) : (
-                    <HorizontalLogo tone="espresso" className="scale-110" />
-                  )}
+                  <MarkLogo className="max-h-64 w-auto" />
+
                 </div>
                 <div className="mt-5">
                   <div className="text-[0.62rem] tracking-[0.3em] text-gold uppercase mb-2">Treatment 0{i + 1}</div>
