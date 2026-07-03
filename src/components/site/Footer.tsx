@@ -8,14 +8,10 @@ export function Footer() {
       </div>
       <div className="container-prose grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <div className="flex items-center gap-4">
-            <MarkLogo className="h-14 w-auto" />
-            <div>
-              <div className="font-serif tracking-[0.18em] text-xl text-cream">A&nbsp;DELIGHT</div>
-              <div className="mt-1 h-px w-10 bg-gold/70" />
-              <div className="mt-1 text-[0.6rem] tracking-[0.3em] uppercase text-gold/80">Ethiopian Specialty Coffee</div>
-            </div>
+          <div className="flex items-center">
+            <MarkLogo className="h-24 w-auto" />
           </div>
+
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-cream/65">
             Heritage Ethiopian coffee, brewed with intention. A new home for the
             ceremony of the cup, launching soon.

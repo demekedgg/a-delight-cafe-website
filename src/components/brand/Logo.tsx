@@ -1,46 +1,41 @@
-import logoMark from "@/assets/logo-mark.svg";
+import logoAsset from "@/assets/adelight-logo.png.asset.json";
 import patternDivider from "@/assets/pattern-divider.svg";
 
+const logoMark = logoAsset.url;
 export { logoMark, patternDivider };
 
-/** The official A Delight bean mark (gold + espresso) */
+/** The official A Delight Coffee logo (bean mark + wordmark, unmodified). */
 export function MarkLogo({ className = "" }: { className?: string }) {
   return (
     <img
       src={logoMark}
       alt="A Delight Coffee"
-      width={120}
-      height={156}
+      width={1024}
+      height={1024}
       className={className}
     />
   );
 }
 
-/** Horizontal lockup — "Golden Hour" treatment (mark + stacked wordmark) */
+/**
+ * Header/nav lockup. The wordmark is baked into the logo image, so we render
+ * the image alone — no adjacent text — and size it generously so the wordmark
+ * stays legible at compact nav sizes.
+ */
 export function HorizontalLogo({
   className = "",
-  tone = "cream",
 }: {
   className?: string;
   tone?: "cream" | "espresso";
 }) {
-  const text = tone === "cream" ? "text-cream" : "text-espresso-deep";
-  const sub = tone === "cream" ? "text-gold/85" : "text-gold";
-  const rule = tone === "cream" ? "bg-gold/70" : "bg-gold";
-
   return (
-    <div className={`flex items-center gap-4 ${className}`}>
-      <img src={logoMark} alt="" width={56} height={72} className="h-12 w-auto shrink-0" />
-      <div className="leading-none">
-        <div className={`font-serif tracking-[0.18em] text-xl sm:text-2xl ${text}`}>
-          A&nbsp;DELIGHT
-        </div>
-        <div className={`mt-1.5 h-px w-12 ${rule}`} />
-        <div className={`mt-1.5 text-[0.55rem] sm:text-[0.6rem] tracking-[0.3em] uppercase ${sub}`}>
-          Ethiopian Specialty Coffee
-        </div>
-      </div>
-    </div>
+    <img
+      src={logoMark}
+      alt="A Delight Coffee"
+      width={1024}
+      height={1024}
+      className={`h-16 sm:h-20 w-auto ${className}`}
+    />
   );
 }
 
@@ -53,12 +48,12 @@ export function PatternDivider({ className = "" }: { className?: string }) {
   );
 }
 
-/** Three brand lockup treatments from the official identity */
+/** Three brand treatments — same official logo, different presentation surfaces. */
 export const logoConcepts = [
   {
     id: "heritage",
     name: "Heritage Refined",
-    description: "The signature lockup on warm cream — mark above stacked wordmark.",
+    description: "The signature logo on warm cream — the everyday brand voice.",
     bg: "bg-cream",
     text: "text-espresso-deep",
     accent: "text-gold",
@@ -67,7 +62,7 @@ export const logoConcepts = [
   {
     id: "midnight",
     name: "Midnight Roast",
-    description: "Glowing gold on deep espresso — the brand at its most cinematic.",
+    description: "The logo on deep espresso — the brand at its most cinematic.",
     bg: "bg-espresso-deep",
     text: "text-cream",
     accent: "text-gold",
@@ -76,10 +71,10 @@ export const logoConcepts = [
   {
     id: "golden",
     name: "Golden Hour",
-    description: "Horizontal lockup on soft cream — perfect for headers and packaging.",
+    description: "Soft cream backdrop — perfect for packaging and print.",
     bg: "bg-cream-soft",
     text: "text-espresso-deep",
     accent: "text-gold",
-    layout: "horizontal" as const,
+    layout: "stacked" as const,
   },
 ] as const;
