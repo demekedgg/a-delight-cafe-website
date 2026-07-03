@@ -1,7 +1,9 @@
-import logoMark from "@/assets/logo-mark.svg";
+import logoAsset from "@/assets/adelight-logo.png.asset.json";
 import patternDivider from "@/assets/pattern-divider.svg";
 
+const logoMark = logoAsset.url;
 export { logoMark, patternDivider };
+
 
 /** The official A Delight bean mark (gold + espresso) */
 export function MarkLogo({ className = "" }: { className?: string }) {
