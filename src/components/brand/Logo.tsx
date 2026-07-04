@@ -1,7 +1,7 @@
-import logoSrc from "@/assets/adelight-logo.png.png?url";
+import logoAsset from "@/assets/adelight-logo.png.asset.json";
 import patternDivider from "@/assets/pattern-divider.svg";
 
-const logoMark = logoSrc;
+const logoMark = logoAsset.url;
 export { logoMark, patternDivider };
 
 /** The official A Delight Coffee logo (bean mark + wordmark, unmodified). */
