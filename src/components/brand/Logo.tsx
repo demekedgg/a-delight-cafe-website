@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/adelight-logo.png.png.asset.json";
+import logoAsset from "@/assets/adelight-logo.png.asset.json";
 import patternDivider from "@/assets/pattern-divider.svg";
 
 const logoMark = logoAsset.url;
