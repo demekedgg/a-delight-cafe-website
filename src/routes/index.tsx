@@ -76,8 +76,8 @@ function Home() {
               <span className="block italic text-gold mt-2">was born.</span>
             </h1>
             <p className="mt-8 max-w-xl text-base sm:text-lg text-cream/75 leading-relaxed">
-              A Delight Coffee is a love letter to Ethiopia — the birthplace of coffee.
-              Single-origin beans, ceremony-grade craft, brought home to California.
+              Single-origin Ethiopian coffee. Ceremony-grade craft, from the
+              birthplace of coffee to your cup.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a href="#story" className="btn-gold">Discover the Story</a>
