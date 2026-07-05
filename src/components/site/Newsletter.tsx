@@ -1,11 +1,11 @@
 import { useEffect, useRef } from "react";
 
 // A Delight Coffee — Kit (ConvertKit) official JavaScript embed
-// Account: a-delight-coffee · Form UID: fe166d098b
+// Account: a-delight-coffee · Form UID: aa4f0141e2 · Form ID: 9646558
 // Kit's officially recommended embed method. Loads Kit's own script,
 // which renders a real Kit form that captures emails reliably.
-const KIT_SCRIPT_SRC = "https://a-delight-coffee.kit.com/fe166d098b/index.js";
-const KIT_UID = "fe166d098b";
+const KIT_SCRIPT_SRC = "https://a-delight-coffee.kit.com/aa4f0141e2/index.js";
+const KIT_UID = "aa4f0141e2";
 
 export function Newsletter(_props: { variant?: "light" | "dark" }) {
   const containerRef = useRef<HTMLDivElement>(null);
