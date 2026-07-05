@@ -325,7 +325,7 @@ function Home() {
             A Delight Coffee is launching soon — starting with directly sourced Ethiopian beans, and growing from there. Join the list to be first.
           </p>
           <div className="mt-14 max-w-md mx-auto">
-            <Newsletter />
+            <a href="#newsletter" className="btn-gold">Join the List</a>
           </div>
         </div>
       </section>
