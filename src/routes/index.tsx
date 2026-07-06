@@ -15,8 +15,10 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "A Delight Coffee — Ethiopian Specialty Coffee" },
       { property: "og:description", content: "Heritage Ethiopian coffee, launching soon in California." },
       { property: "og:image", content: heroImg },
+      { property: "og:url", content: "https://adelightcoffee.com/" },
       { name: "twitter:image", content: heroImg },
     ],
+    links: [{ rel: "canonical", href: "https://adelightcoffee.com/" }],
   }),
   component: Home,
 });
