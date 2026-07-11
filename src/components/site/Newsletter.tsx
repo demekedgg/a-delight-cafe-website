@@ -24,5 +24,5 @@ export function Newsletter(_props: { variant?: "light" | "dark" }) {
     el.appendChild(script);
   }, []);
 
-  return <div ref={containerRef} className="w-full max-w-xl kit-embed" />;
+  return <div ref={containerRef} className="w-full kit-embed" />;
 }
