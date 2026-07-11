@@ -348,9 +348,9 @@ function Home() {
               Join our launch list for opening-day invites, early access to the
               interactive coffee studio, and stories from origin.
             </p>
-            <div className="mt-10">
-              <Newsletter />
-            </div>
+          </div>
+          <div className="mt-10">
+            <Newsletter />
           </div>
         </div>
       </section>
