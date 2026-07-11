@@ -193,3 +193,18 @@
   0% { transform: translateY(0) scale(1); opacity: 0.6; }
   100% { transform: translateY(-40px) scale(1.4); opacity: 0; }
 }
+
+/* ── A Delight Coffee: Kit newsletter form — full-width background ──
+   Kit's embed injects its own max-width caps (420px, and 880px on desktop)
+   with !important. These overrides are scoped more specifically than Kit's
+   own selectors so they win, letting the coffee-bean background fill the
+   full width of the section edge-to-edge. */
+.kit-embed {
+  width: 100%;
+  max-width: 100%;
+}
+.kit-embed .formkit-form[data-uid="aa4f0141e2"],
+.kit-embed .formkit-form[data-uid="aa4f0141e2"][data-format="inline"] {
+  width: 100% !important;
+  max-width: 100% !important;
+}
